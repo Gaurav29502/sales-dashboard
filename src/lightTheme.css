@@ -1,0 +1,149 @@
+:root {
+  color-scheme: light;
+  color: #172b46;
+  background: #f3f6fb;
+  --page-bg: #f3f6fb;
+  --surface: #ffffff;
+  --surface-raised: #f7f9fc;
+  --surface-soft: #eef3f8;
+  --line: #d8e1ec;
+  --line-soft: #e6ecf3;
+  --text-main: #172b46;
+  --text-muted: #62758d;
+  --text-dim: #8291a4;
+  --blue: #377ac2;
+  --cyan: #258ea2;
+  --green: #258769;
+  --amber: #a9781a;
+  --red: #c64e5a;
+}
+body, .appShell { background: #f3f6fb; color: #172b46; }
+.appShell { background: radial-gradient(ellipse at 50% -25%, rgba(65, 129, 196, .08), transparent 55%), #f3f6fb; }
+.dashboardHeader { border-color: #dce4ed; background: rgba(255,255,255,.97); box-shadow: 0 .5vw 1.7vw rgba(30,56,85,.08); }
+.brandName, .headerTitle, .dashboardIntroRow h1, .breakdownIntroRow h1, .sectionHeadingGroup h2, .salesGroupHeader h2, .panelTitleRow h3, .purchaseSectionHeader h2, .expensePanelHeading h2, .ageingPageIntro h1, .ageingTableHeader h2 { color: #172b46; }
+.brandCaption, .headerSubtitle, .dashboardIntroText, .breakdownIntroRow p, .sectionHeadingGroup p, .salesGroupHeader p, .panelTitleRow p, .purchaseSectionHeader p, .expensesIntroRow p, .ageingPageIntro p, .ageingTableHeader p { color: #657991; }
+.headerDivider { background: #dce4ed; }
+.headerNavItem { color: #5f7188; }
+.headerNavItem:hover { border-color: #dce5ef; background: #f2f6fb; color: #214a72; }
+.headerNavItemActive { border-color: #c8ddef; background: #eaf3fb; color: #276ba9; }
+.headerNavItemActive::after { background: #4389c7; }
+.headerCredentials { border-color: #dce4ed; color: #697c93; }
+.headerCredentials b { color: #263f5c; }
+.headerFilterButton { border-color: #d0dce9; background: #f5f8fc; color: #315b83; }
+.headerLogoutButton { border-color: #d8e1eb; background: #f6f8fb; color: #5b6f87; }
+.dashboardPanel, .salesGroup, .statCard, .purchaseMetric, .purchasesPanel, .expensesPanel, .ageingMetric, .ageingTablePanel, .breakdownKpiCard, .comingSoonCard { border-color: #dce4ed; background: #fff; box-shadow: 0 .55vw 1.6vw rgba(32,58,85,.055); }
+.salesGroup { background: #f9fbfe; }
+.dashboardPanel { background: linear-gradient(145deg,#fff,#f9fbfe); }
+.sectionHeadingGroup h2, .salesGroupHeader h2, .panelTitleRow h3, .purchaseSectionHeader h2, .expensePanelHeading h2, .ageingTableHeader h2 { color: #203957; }
+.sectionHeadingGroup p, .salesGroupHeader p, .panelTitleRow p, .dashboardFooter, .purchasesFooter, .expensesFooter, .ageingFooter { color: #78899d; }
+.statCard { background: linear-gradient(145deg,#fff,#f7fafe); }
+.statCardLabel { color: #687d94; }
+.statCardValue { color: #1d3552; }
+.statCardDetail { color: #7a8da3; }
+.salesGroupIcon, .salesStatsGrid .statCard, .breakdownKpiCard { border-color: #e0e7ef; background: #f6f9fc; }
+.salesStatsGrid .statCardLabel, .salesStatsGrid .statCardDetail { color: #697d94; }
+.salesStatsGrid .statCardValue { color: #1e3c5e; }
+.updatedBadge, .purchasesPositionBadge, .ageingAsOfBadge { border-color: #dbe4ee; background: #fff; color: #667b93; }
+.updatedBadge b, .purchasesPositionBadge b, .ageingAsOfBadge b { color: #263f5c; }
+.filterOpenButton, .ageingFilterButton { border-color: #cad8e7; background: #fff; color: #315b83; }
+.filterOpenButton:hover, .ageingFilterButton:hover { border-color: #77aad7; background: #f2f8fd; color: #1b679e; }
+.appliedFiltersLabel { color: #73869c; }
+.filterChip { border-color: #cbdced; background: #edf5fc; color: #426d95; }
+.clearAppliedButton { color: #386d9e; }
+.monthlyPanel { background: #fff; }
+.chartAxisLabel, .chartMonthLabel { fill: #6d8096; }
+.chartMonthActive { fill: #183b60; }
+.chartLegend .legendItem { color: #5e7188; }
+.monthlyChart line { stroke: #dce5ee; }
+.categoryAxis { color: #73859b; }
+.categoryBarLabel { color: #465e78; }
+.categoryBarRow b, .categoryShareRow b, .categoryShareTitle, .categoryTotalRow b { color: #253e5b; }
+.categoryBarTrack, .categoryShareTrack { background: #e9eff5; }
+.categoryShareTitle, .categoryTotalRow { border-color: #e1e8ef; color: #687c92; }
+.categoryShareRow, .categoryTotalRow { color: #657990; }
+.chartUnit { border-color: #dbe4ee; background: #f7f9fc; color: #637992; }
+.chartTooltip { border-color: #d3deea; background: rgba(255,255,255,.98); box-shadow: 0 .6vw 1.6vw rgba(25,51,80,.14); color: #526881; }
+.chartTooltip b, .chartTooltip strong { color: #1e3b5c; }
+.chartPointerLayer { cursor: crosshair; }
+.chartHoverLine { background: rgba(56,105,151,.3); }
+.filterOverlay, .ageingFilterOverlay, .purchaseFilterOverlay, .expenseFilterOverlay { background: rgba(31,53,78,.28); }
+.filterDrawer, .ageingFilterDrawer, .purchaseFilterDrawer, .expenseFilterDrawer { border-color: #d8e2ed; background: #fff; box-shadow: -1vw 0 3vw rgba(28,52,78,.14); }
+.filterDrawerHeader, .ageingFilterHead, .purchaseFilterHeader, .expenseFilterHeader { border-color: #e0e7ef; }
+.filterDrawerEyebrow, .filterDrawerHeader h2, .ageingFilterHead h2, .purchaseFilterHeader h2, .expenseFilterHeader h2 { color: #1d3654; }
+.filterDrawerHeader p, .ageingFilterHead p, .purchaseFilterHeader p, .expenseFilterHeader p { color: #63778e; }
+.filterDrawerBody .filterField, .ageingFilterField, .purchaseFilterFields label, .expenseFilterFields label { color: #526981; }
+.filterField input, .filterSelectWrap select, .ageingFilterField input, .ageingFilterField select, .purchaseFilterFields input, .purchaseFilterFields select, .expenseFilterFields input { border-color: #d2deea; background: #f8fafc; color: #263f5b; color-scheme: light; }
+.filterSegmentedControl { border-color: #d6e0eb; background: #f3f6fa; }
+.filterSegmentedControl button { color: #5e7288; }
+.filterSegmentedControl .filterSegmentActive { background: #e4f1fc; color: #245f94; box-shadow: inset 0 0 0 .07vw #b8d7f1; }
+.filterDrawerFooter, .filterDrawerFooter { border-color: #e0e7ef; background: #f8fafc; }
+.filterClearButton, .filterCancelButton, .ageingClearButton, .purchaseFilterClear, .expenseFilterClear { color: #62768d; }
+.filterCancelButton, .ageingCancelButton, .purchaseFilterCancel, .expenseFilterCancel { border-color: #d2deea; background: #f5f8fb; color: #425c78; }
+.filterApplyButton, .ageingApplyButton, .purchaseFilterApply, .expenseFilterApply { border-color: #3478b7; background: #347fbd; color: #fff; }
+.breakdownBreadcrumb { color: #70839a; }
+.breakdownBreadcrumb button { color: #3478b7; }
+.breakdownBreadcrumb b { color: #38516d; }
+.dashboardTable, .ageingTable, .purchaseMonthTable, .supplierPayablesTable, .expenseGroupsTable { color: #3d536b; }
+.dashboardTable thead, .ageingTable thead, .purchaseMonthTable thead, .supplierPayablesTable thead, .expenseGroupsTable thead, .ageingTable tfoot, .expenseGroupsTable tfoot { background: #edf2f7; color: #415a75; }
+.dashboardTable th, .ageingTable th, .purchaseMonthTable th, .supplierPayablesTable th, .expenseGroupsTable th { color: #536a83; }
+.dashboardTable td, .ageingTable td, .purchaseMonthTable td, .supplierPayablesTable td, .expenseGroupsTable td { border-color: #e1e8ef; }
+.dashboardTable td b, .ageingTable td b, .expenseGroupsTable td b { color: #253e5b; }
+.dashboardTable tbody tr:hover, .ageingClientRow:hover, .purchaseMonthTable tbody tr:hover, .supplierPayablesTable tbody tr:hover, .expenseGroupsTable tbody tr:hover { background: #f3f8fd; }
+.ageingSalesTab { border-color: #d8e2ed; background: #fff; color: #5f738b; }
+.ageingSalesTabActive { border-color: #c5dcf0; background: #eaf4fc; color: #286da8; box-shadow: inset 0 0 0 .07vw rgba(75,156,255,.12); }
+.ageingLegend span { border-color: #dbe4ed; background: #f6f9fc; color: #536a83; }
+.ageingSearchBox { border-color: #d3deea; background: #fff; color: #72859a; }
+.ageingSearchBox input { color: #263f5b; }
+.ageingTable { color: #40566f; }
+.ageingAmountCell { color: #263f5b; }
+.ageingRowAction { border-color: #c9dced; background: #eff6fc; color: #326f9f; }
+.wadoBadgeGreen, .ageingBucketBadgenotDue, .ageingBucketBadgedays0to30 { background: #e7f6f0; color: #287e65; }
+.wadoBadgeAmber, .ageingBucketBadgedays31to60 { background: #fff4df; color: #956817; }
+.wadoBadgeRed, .ageingBucketBadgedays61to90, .ageingBucketBadgedays90plus { background: #fff0f0; color: #b74d58; }
+.ageingTableFootnote { border-color: #e0e7ef; color: #687c92; }
+.ageingTableFootnote span { color: #377bb5; }
+.ageingMetric { color: #273f5b; text-align: left; cursor: pointer; transition: border-color 140ms ease, box-shadow 140ms ease, transform 140ms ease; }
+.ageingMetric:hover, .ageingMetricActive { border-color: #8bb7dc; box-shadow: 0 .5vw 1.4vw rgba(38,94,143,.14); transform: translateY(-.08vw); }
+.ageingMetricTop { color: #61758d; }
+.ageingMetricblue b, .ageingMetricgreen b, .ageingMetriccyan b, .ageingMetricamber b, .ageingMetricorange b, .ageingMetricred b { color: #27435f; }
+.ageingMetricblue i, .ageingMetricgreen i, .ageingMetriccyan i, .ageingMetricamber i, .ageingMetricorange i, .ageingMetricred i { background: #edf4fa; }
+.ageingBackButton { border-color: #d0dce8; background: #fff; color: #3c668d; }
+.ageingActiveBucket { color: #3d688f; font-size: .72vw; font-weight: 700; }
+.purchaseSectionHeader h2, .expensePanelHeading h2 { color: #243e5d; }
+.purchaseMetric > div, .expenseMetric > div { color: #5d7189; }
+.purchaseMetric > b, .expenseMetric > b { color: #243f5e; }
+.purchaseMetric small, .expenseMetric small { color: #73869b; }
+.purchaseSectionHeader > span, .expensePanelHeading span { border-color: #d1e0ed; background: #f2f7fb; color: #4d749a; }
+.purchaseMonthTable tfoot { background: #edf2f7; color: #334f6d; }
+.supplierCategoryTag { background: #edf5fc; color: #456e93; }
+.paymentFocusCard { border-color: #dce5ee; background: #f6f9fc; color: #4c627a; }
+.paymentFocusCard > div b { color: #263f5b; }
+.expenseGroupsTable td small { color: #75879b; }
+.expenseSummaryIntro, .expenseVarianceItem small { color: #6b7f95; }
+.expenseVarianceLabel { color: #334d69; }
+.expenseVarianceTrack { background: #e6edf3; }
+.expenseActualOver, .expenseVarianceOver, .expenseVarianceLabelOver { color: #bc5862; }
+.expenseActualWithin, .expenseVarianceWithin, .expenseVarianceLabelWithin { color: #258769; }
+.expenseStatusOver { background: #fff0f0; color: #b84e59; }
+.expenseStatusWithin { background: #e8f6f1; color: #287e65; }
+.expenseChartGrid line { stroke: #dce5ee; }
+.expenseChartGrid text, .expenseMonthLabel { fill: #647991; }
+.expenseActualPoint { stroke: #fff; }
+.tablePagination { color: #62768d; }
+.tablePageSize select { border-color: #d3deea; background: #f8fafc; color: #2c4764; }
+.tablePageButtons button, .tableCsvButton { border-color: #d0deeb; background: #f5f9fc; color: #426887; }
+.tablePageButtons button:hover, .tableCsvButton:hover { border-color: #8bb7dc; background: #edf6fd; color: #24689f; }
+.tablePageButtons button:disabled { opacity: .45; }
+.dashboardFooter i { background: #adbdcc; }
+.comingSoonCard h1 { color: #183653; }
+.comingSoonEyebrow { color: #287e9a; }
+.loginMain, .loginPage, .loginContainer { color: #203953; }
+.loginMain { background: radial-gradient(ellipse at 50% 15%, rgba(73,145,208,.12), transparent 48%), #f3f6fb; }
+.loginCard { border-color: #dce4ed; background: #fff; box-shadow: 0 1.5vw 4vw rgba(34,59,86,.12); }
+.loginBrandMark { border-color: #b8d8e8; background: #edf7fb; color: #24849c; }
+.loginEyebrow { color: #28869b; }
+.loginCard h1 { color: #1b3655; }
+.loginCard p { color: #657991; }
+.loginCard label { color: #526982; }
+.loginCard input { border-color: #d1ddea; background: #f8fafc; color: #243f5e; color-scheme: light; }
+.loginCard input::placeholder { color: #8291a4; }

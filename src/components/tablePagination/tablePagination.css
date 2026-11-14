@@ -1,0 +1,10 @@
+.tablePagination { display: flex; align-items: center; justify-content: flex-end; gap: 1vw; padding: 1vh .8vw; color: #91a4ba; font-size: .68vw; }
+.tablePageSize { display: flex; align-items: center; gap: .45vw; }
+.tablePageSize select { min-width: 3.4vw; padding: .45vh .45vw; border: .07vw solid #304158; border-radius: .35vw; background: #111d2d; color: #dce8f5; font: inherit; }
+.tablePageSummary { min-width: 5vw; text-align: center; }
+.tablePageButtons { display: flex; align-items: center; gap: .55vw; }
+.tablePageButtons button { width: 1.7vw; height: 1.7vw; border: .07vw solid #304158; border-radius: .35vw; background: #152337; color: #dce8f5; font-size: 1vw; cursor: pointer; }
+.tablePageButtons button:disabled { opacity: .4; cursor: default; }
+@media (max-width: 48rem) { .tablePagination { gap: 2vw; padding: 1vh 2vw; font-size: 2vw; flex-wrap: wrap; }.tablePageSize { gap: 1vw; }.tablePageSize select { min-width: 9vw; padding: .5vh 1vw; }.tablePageSummary { min-width: 14vw; }.tablePageButtons { gap: 1.5vw; }.tablePageButtons button { width: 6vw; height: 6vw; font-size: 4vw; } }
+
+.tableCsvButton { padding: .48vh .7vw; border: .07vw solid #304158; border-radius: .35vw; background: #152337; color: #c8d8e9; font: inherit; cursor: pointer; }.tableCsvButton:hover { border-color: #4b9cff; color: #2474bd; background: #edf6ff; }

@@ -1,13 +1,108 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #e5edf8;
+  background: #0b1220;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  font-smooth: always;
+  --page-bg: #0b1220;
+  --surface: #111b2b;
+  --surface-raised: #162337;
+  --surface-soft: #0f1a2a;
+  --line: #26364c;
+  --line-soft: #1e2d42;
+  --text-main: #e6edf7;
+  --text-muted: #8da0b8;
+  --text-dim: #647892;
+  --blue: #4b9cff;
+  --cyan: #41c9df;
+  --green: #44d3a2;
+  --amber: #f3b957;
+  --red: #ff727f;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: var(--page-bg);
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  color: inherit;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 0.138889vw solid #68b5ff;
+  outline-offset: 0.138889vw;
+}
+
+.appShell {
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at 50% -25%, rgba(34, 88, 143, 0.14), transparent 55%),
+    var(--page-bg);
+}
+
+.comingSoonMain {
+  display: grid;
+  min-height: calc(100vh - 10.444444vh);
+  place-items: center;
+  padding: 2.777778vw;
+}
+
+.comingSoonCard {
+  width: min(43.055556vw, 100%);
+  padding: 2.638889vw;
+  border: 0.069444vw solid var(--line);
+  border-radius: 1.111111vw;
+  background: var(--surface);
+  box-shadow: 0 1.666667vw 4.166667vw rgba(0, 0, 0, 0.24);
+}
+
+.comingSoonEyebrow {
+  color: var(--cyan);
+  font-size: 0.763889vw;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.comingSoonCard h1 {
+  margin: 0.972222vw 0 0.694444vw;
+  font-size: 1.875vw;
+}
+
+.comingSoonCard p {
+  margin: 0 0 1.666667vw;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.primaryButton {
+  min-height: 4.444444vh;
+  padding: 0 1.111111vw;
+  border: 0.069444vw solid #3988e1;
+  border-radius: 0.555556vw;
+  background: #2577d5;
+  color: #fff;
+  font-size: 0.902778vw;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 150ms ease, transform 150ms ease;
+}
+
+.primaryButton:hover {
+  transform: translateY(-0.069444vw);
+  background: #3289eb;
 }

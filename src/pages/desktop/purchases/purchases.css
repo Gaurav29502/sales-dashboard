@@ -1,0 +1,79 @@
+.purchasesMain { width: 95.28vw; margin: 0 auto; padding: 2.4vh 0 3vh; }
+.purchasesIntroRow { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 1.5vh; }
+.purchasesEyebrow { display: flex; align-items: center; gap: 0.5vw; color: var(--cyan); font-size: 0.65vw; font-weight: 850; letter-spacing: 0.15em; }
+.purchasesEyebrow span { width: 0.38vw; height: 0.38vw; border-radius: 50%; background: var(--green); }
+.purchasesIntroRow h1 { margin: 0.5vh 0 0; color: var(--text-main); font-size: 1.8vw; letter-spacing: -0.035em; }
+.purchasesIntroRow p { margin: 0.55vh 0 0; color: var(--text-muted); font-size: 0.78vw; }
+.purchasesPositionBadge { display: flex; flex-direction: column; gap: 0.3vh; padding: 0.8vh 0.9vw; border: 0.07vw solid #293b52; border-radius: 0.5vw; background: #111d2d; }
+.purchasesPositionBadge span { color: var(--text-dim); font-size: 0.55vw; font-weight: 850; letter-spacing: 0.12em; }
+.purchasesPositionBadge b { color: #cbd9e8; font-size: 0.78vw; }
+.purchasesDataNotice { display: flex; align-items: center; gap: 0.6vw; margin-bottom: 1.7vh; padding: 0.75vh 0.85vw; border: 0.07vw solid rgba(243, 185, 87, 0.24); border-radius: 0.42vw; background: rgba(243, 185, 87, 0.055); color: #9eacc0; font-size: 0.63vw; }
+.purchasesDataNotice b { color: #f3c66f; font-size: 0.58vw; letter-spacing: 0.09em; white-space: nowrap; }
+.purchasesDataNotice em { margin-left: auto; color: #9ecbfa; font-style: normal; white-space: nowrap; }
+.purchaseMetricGrid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0.85vw; margin-bottom: 1.8vh; }
+.purchaseMetric { min-height: 11.2vh; padding: 1.2vh 0.95vw; border: 0.07vw solid #2b3b50; border-radius: 0.75vw; background: #121e2e; }
+.purchaseMetric > div { display: flex; align-items: center; gap: 0.45vw; color: #9eb0c4; font-size: 0.64vw; font-weight: 750; letter-spacing: 0.04em; text-transform: uppercase; }
+.purchaseMetric i { display: grid; min-width: 1.35vw; height: 1.35vw; place-items: center; border-radius: 0.4vw; background: rgba(75, 156, 255, 0.12); color: #75b7ff; font-size: 0.62vw; font-style: normal; font-weight: 850; }
+.purchaseMetric > b { display: block; margin-top: 1vh; color: #dfeafa; font-size: 1.25vw; letter-spacing: -0.035em; }
+.purchaseMetric small { display: block; margin-top: 0.55vh; color: #7d91a9; font-size: 0.62vw; }
+.purchaseMetricblue { border-top: 0.18vh solid #4b9cff; }.purchaseMetricgreen { border-top: 0.18vh solid #44d3a2; }.purchaseMetricgreen i { color: #44d3a2; background: rgba(68,211,162,.12); }.purchaseMetricgreen > b { color: #75dfbc; }
+.purchaseMetricamber { border-top: 0.18vh solid #f3b957; }.purchaseMetricamber i { color: #f3b957; background: rgba(243,185,87,.13); }.purchaseMetricamber > b { color: #f5c66f; }
+.purchaseMetricred { border-top: 0.18vh solid #ff727f; }.purchaseMetricred i { color: #ff8994; background: rgba(255,114,127,.13); }.purchaseMetricred > b { color: #ff929b; }
+.purchaseMetricpurple { border-top: 0.18vh solid #aa8cf4; }.purchaseMetricpurple i { color: #b99cff; background: rgba(170,140,244,.13); }.purchaseMetricpurple > b { color: #c3aaff; }
+.purchasesPanel { margin-bottom: 1.8vh; overflow: hidden; border: 0.07vw solid #26384e; border-radius: 0.85vw; background: #111b2b; box-shadow: 0 0.85vw 2vw rgba(0, 0, 0, 0.12); }
+.purchaseSectionHeader { display: flex; align-items: center; justify-content: space-between; padding: 1.55vh 1.15vw; }
+.purchaseSectionHeader > div { display: flex; align-items: center; gap: 0.75vw; }
+.purchaseSectionHeader h2 { margin: 0; color: #e0eaf5; font-size: 0.9vw; font-weight: 850; letter-spacing: 0.045em; text-transform: uppercase; }
+.purchaseSectionHeader p { margin: 0; color: var(--text-dim); font-size: 0.62vw; }
+.purchaseSectionHeader > span { padding: 0.45vh 0.55vw; border: 0.07vw solid #2a4566; border-radius: 0.35vw; background: #14263a; color: #9bcafa; font-size: 0.62vw; white-space: nowrap; }
+.purchasesMonthlyGrid { display: grid; grid-template-columns: minmax(0, 1.18fr) minmax(0, 0.82fr); gap: 1vw; padding: 0 1.15vw 1.4vh; }
+.purchaseChartWrap { min-width: 0; }
+.purchaseChartLegend, .paymentChartLegend { display: flex; flex-wrap: wrap; gap: 0.65vw; padding: 0.8vh 0.3vw; color: #8fa2b7; font-size: 0.62vw; }
+.purchaseChartLegend span, .paymentChartLegend span { display: flex; align-items: center; gap: 0.35vw; }
+.purchaseChartLegend i, .paymentChartLegend i { width: 0.48vw; height: 0.48vw; border-radius: 50%; }
+.purchaseLegendOutstanding { background: #f3b957; }.purchaseLegendOverdue { background: #ff727f; }.purchaseLegendPayments { background: #44d3a2; }.purchaseLegendPurchases { background: #4b9cff; }
+.purchaseMonthlyChart { display: block; width: 100%; height: 29vh; overflow: visible; }
+.purchaseChartGrid line { stroke: #263548; stroke-dasharray: 2 5; stroke-width: 1; }.purchaseChartGrid text { fill: #70839b; font-size: .78vw; }
+.purchaseBarPurchase { fill: #4b9cff; opacity: 0.75; }.purchaseBarPayment { fill: #44d3a2; opacity: 0.75; }.purchasePointOverdue { fill: #ff727f; stroke: #111b2b; stroke-width: 1.5; }
+.purchaseOutstandingLine { stroke: #f3b957; stroke-width: 2.5; }.purchaseOutstandingPoint { fill: #f3b957; stroke: #111b2b; stroke-width: 1.5; }.purchaseChartMonth, .paymentChartWeek { fill: #8396ad; font-size: .78vw; }
+.purchaseMonthTableScroll, .supplierTableScroll { overflow: auto; min-width: 0; border: 0.07vw solid #26364b; border-radius: 0.45vw; }
+.purchaseMonthTable, .supplierPayablesTable { width: 100%; border-collapse: collapse; color: #b7c6d7; font-size: 0.68vw; text-align: left; white-space: nowrap; }
+.purchaseMonthTable thead, .supplierPayablesTable thead { background: #17263a; color: #91a7c0; }
+.purchaseMonthTable th, .purchaseMonthTable td, .supplierPayablesTable th, .supplierPayablesTable td { padding: 0.9vh 0.55vw; border-bottom: 0.07vw solid #223247; }
+.purchaseMonthTable th, .supplierPayablesTable th { font-size: 0.58vw; font-weight: 850; letter-spacing: 0.055em; text-transform: uppercase; }
+.purchaseMonthTable td:first-child, .purchaseMonthTable th:first-child, .supplierPayablesTable td:first-child, .supplierPayablesTable th:first-child { padding-left: 0.8vw; }
+.purchaseMonthTable tbody tr:last-child td, .supplierPayablesTable tbody tr:last-child td { border-bottom: 0; }
+.purchaseMonthTable tbody td:not(:first-child), .purchaseMonthTable tfoot th:not(:first-child), .supplierPayablesTable td:nth-child(n+3) { font-variant-numeric: tabular-nums; }
+.purchaseMonthTable td b, .supplierPayablesTable td b { color: #d7e4f1; }
+.purchasePaidCell { color: #68dcb4; }.purchaseOwingCell { color: #f1c46f; }.purchaseOverdueCell { color: #ff8994; }
+.purchaseMonthTable tfoot { background: #17263a; color: #dce8f5; }.purchaseMonthTable tfoot th { text-transform: none; letter-spacing: 0; }
+.purchaseEmptyCell { padding: 2.6vh 0.7vw !important; color: var(--text-muted); text-align: center; }
+.paymentProfileLayout { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(18vw, 0.5fr); gap: 1.2vw; padding: 0 1.15vw 1.5vh; }
+.paymentChartWrap { min-width: 0; }.paymentChartLegend { padding-top: 0; }
+.paymentProfileChart { display: block; width: 100%; height: 25vh; }
+.paymentBarCarry { fill: #ff8490; opacity: 0.78; }.paymentBarPlanned { fill: #44d3a2; opacity: 0.78; }.paymentBarScheduled { fill: #4b9cff; opacity: 0.78; }
+.paymentFocusCard { display: flex; flex-direction: column; gap: 1vh; padding: 1.35vh 1vw; border: 0.07vw solid #2b3d54; border-radius: 0.6vw; background: #142237; }
+.paymentFocusEyebrow { color: #70b8ff; font-size: 0.6vw; font-weight: 850; letter-spacing: 0.13em; }
+.paymentFocusCard > div { display: flex; justify-content: space-between; gap: 0.5vw; color: #96a9bf; font-size: 0.68vw; }
+.paymentFocusCard > div b { color: #dce8f5; font-variant-numeric: tabular-nums; }.paymentFocusCard .paymentGapRow b { color: #ff8994; }
+.paymentFocusCard p { margin: auto 0 0; padding-top: 1vh; border-top: 0.07vw solid #283a50; color: #7489a2; font-size: 0.59vw; line-height: 1.55; }
+.supplierPayablesPanel .purchaseSectionHeader { padding-bottom: 1.2vh; }.supplierPayablesTable th, .supplierPayablesTable td { padding: 1.15vh 0.75vw; }
+.supplierCategoryTag { color: #93abc5; }.supplierRiskBadge { display: inline-flex; min-width: 3vw; justify-content: center; padding: 0.35vh 0.4vw; border-radius: 0.35vw; font-size: 0.64vw; font-weight: 850; }
+.supplierRiskHigh { background: rgba(255,114,127,.15); color: #ff929b; }.supplierRiskMedium { background: rgba(243,185,87,.15); color: #f3c66f; }.supplierRiskLow { background: rgba(68,211,162,.14); color: #63dcb5; }
+.purchasesFooter { padding: 0.4vh 0.2vw 0; color: #657991; font-size: 0.58vw; letter-spacing: 0.1em; text-align: right; }
+.purchaseFilterOverlay { position: fixed; z-index: 50; inset: 0; display: flex; justify-content: flex-end; background: rgba(1,7,15,.68); backdrop-filter: blur(.2vw); }
+.purchaseFilterDrawer { display: flex; width: min(34vw, 100%); height: 100%; flex-direction: column; padding: 3vh 2vw; border-left: .07vw solid #30445d; background: #101a29; box-shadow: -1vw 0 3vw rgba(0,0,0,.3); }
+.purchaseFilterHeader { display: flex; align-items: flex-start; justify-content: space-between; padding-bottom: 2vh; border-bottom: .07vw solid #26374c; }
+.purchaseFilterHeader span { color: var(--cyan); font-size: .62vw; font-weight: 850; letter-spacing: .14em; }.purchaseFilterHeader h2 { margin: .65vh 0 0; color: #ecf4fc; font-size: 1.4vw; }.purchaseFilterHeader p { margin: .55vh 0 0; color: var(--text-muted); font-size: .74vw; }
+.purchaseFilterHeader button { width: 2.1vw; height: 2.1vw; border: .07vw solid #304158; border-radius: .45vw; background: #162438; color: #a6b8cc; font-size: 1.3vw; cursor: pointer; }
+.purchaseFilterFields { display: grid; gap: 1.7vh; margin-top: 2.3vh; }.purchaseFilterFields label { display: grid; gap: .65vh; color: #9db0c6; font-size: .72vw; font-weight: 700; }.purchaseFilterFields input, .purchaseFilterFields select { width: 100%; height: 4.8vh; padding: 0 .75vw; border: .07vw solid #31445d; border-radius: .48vw; background: #0b1421; color: #dce9f7; font-size: .76vw; }
+.purchaseFilterNote { margin-top: 1.8vh; padding: 1vh .8vw; border-left: .18vw solid #f3b957; background: rgba(243,185,87,.07); color: #a9b9cc; font-size: .68vw; line-height: 1.55; }.purchaseFilterError { color: #ff8994; font-size: .74vw; }
+.purchaseFilterActions { display: flex; align-items: center; gap: .6vw; margin-top: auto; padding-top: 1.5vh; border-top: .07vw solid #26374c; }.purchaseFilterActions button { height: 4.4vh; padding: 0 .9vw; border-radius: .45vw; font-size: .71vw; font-weight: 750; cursor: pointer; }.purchaseFilterClear { margin-right: auto; border: 0; background: transparent; color: #8fa3bb; }.purchaseFilterCancel { border: .07vw solid #31445d; background: #152237; color: #c0cede; }.purchaseFilterApply { border: .07vw solid #3585da; background: #2577d5; color: #fff; }
+@media (max-width: 80rem) {
+  .purchasesMain { width: 94vw; }.purchasesIntroRow h1 { font-size: 2.6vw; }.purchasesIntroRow p, .purchaseSectionHeader p { font-size: 1vw; }.purchasesEyebrow, .purchasesPositionBadge span, .purchasesDataNotice b, .purchaseMetric > div, .purchaseSectionHeader > span { font-size: .85vw; }.purchasesPositionBadge b, .purchaseMetric small { font-size: 1vw; }.purchasesDataNotice { font-size: .9vw; }.purchaseMetric > b { font-size: 1.9vw; }.purchaseMetric i { min-width: 2vw; height: 2vw; font-size: .9vw; }.purchaseSectionHeader h2 { font-size: 1.25vw; }.purchaseChartLegend, .paymentChartLegend { font-size: .85vw; }.purchaseMonthTable, .supplierPayablesTable { font-size: .9vw; }.purchaseMonthTable th, .supplierPayablesTable th { font-size: .75vw; }.paymentFocusCard > div, .paymentFocusCard p { font-size: .9vw; }.paymentFocusEyebrow, .purchasesFooter { font-size: .75vw; }.supplierRiskBadge { font-size: .8vw; }.purchaseFilterDrawer { width: min(48vw, 100%); }.purchaseFilterHeader span, .purchaseFilterFields label, .purchaseFilterNote { font-size: .9vw; }.purchaseFilterHeader h2 { font-size: 1.8vw; }.purchaseFilterHeader p, .purchaseFilterFields input, .purchaseFilterFields select, .purchaseFilterActions button { font-size: 1vw; }
+}
+@media (max-width: 48rem) {
+  .purchasesMain { width: 92vw; padding-top: 2vh; }.purchasesIntroRow { align-items: flex-start; }.purchasesIntroRow h1 { font-size: 5vw; }.purchasesIntroRow p { max-width: 60vw; font-size: 2.3vw; }.purchasesEyebrow { font-size: 1.8vw; }.purchasesPositionBadge span { font-size: 1.6vw; }.purchasesPositionBadge b { font-size: 2vw; }.purchasesDataNotice { flex-wrap: wrap; font-size: 1.9vw; }.purchasesDataNotice b { font-size: 1.7vw; }.purchaseMetricGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.1vw; }.purchaseMetric { min-height: 9vh; padding: 1.1vh 2vw; }.purchaseMetric > div { font-size: 1.9vw; }.purchaseMetric i { min-width: 4vw; height: 4vw; font-size: 1.8vw; }.purchaseMetric > b { font-size: 3.2vw; }.purchaseMetric small { font-size: 1.8vw; }.purchasesMonthlyGrid { grid-template-columns: 1fr; gap: 1vh; padding: 0 2vw 1.4vh; }.purchaseSectionHeader { align-items: flex-start; gap: 1vw; padding: 1.5vh 2vw; }.purchaseSectionHeader > div { align-items: flex-start; flex-direction: column; gap: .4vh; }.purchaseSectionHeader h2 { font-size: 2.7vw; }.purchaseSectionHeader p, .purchaseSectionHeader > span { font-size: 1.8vw; }.purchaseChartLegend, .paymentChartLegend { gap: 1.1vw; font-size: 1.7vw; }.purchaseChartLegend i, .paymentChartLegend i { width: 1.4vw; height: 1.4vw; }.purchaseMonthlyChart { height: 22vh; }.purchaseMonthTable, .supplierPayablesTable { min-width: 155vw; font-size: 2vw; }.purchaseMonthTable th, .supplierPayablesTable th { font-size: 1.7vw; }.purchaseMonthTable th, .purchaseMonthTable td, .supplierPayablesTable th, .supplierPayablesTable td { padding: 1vh 1.5vw; }.paymentProfileLayout { grid-template-columns: 1fr; padding: 0 2vw 1.5vh; }.paymentProfileChart { height: 20vh; }.paymentFocusCard { gap: .8vh; padding: 1.3vh 2vw; }.paymentFocusCard > div { font-size: 2vw; }.paymentFocusCard p, .paymentFocusEyebrow { font-size: 1.8vw; }.purchasesFooter { font-size: 1.6vw; }.supplierRiskBadge { min-width: 8vw; font-size: 1.7vw; }.purchaseFilterDrawer { width: 100%; padding: 2.5vh 5vw; }.purchaseFilterHeader span { font-size: 2vw; }.purchaseFilterHeader h2 { font-size: 5vw; }.purchaseFilterHeader p { font-size: 2.5vw; }.purchaseFilterHeader button { width: 7vw; height: 7vw; font-size: 5vw; }.purchaseFilterFields label { font-size: 2.3vw; }.purchaseFilterFields input, .purchaseFilterFields select { height: 5vh; padding: 0 2vw; font-size: 2.5vw; }.purchaseFilterNote { padding: 1vh 2vw; font-size: 2.1vw; }.purchaseFilterError { font-size: 2.3vw; }.purchaseFilterActions { gap: 1.5vw; }.purchaseFilterActions button { height: 4.7vh; padding: 0 2vw; font-size: 2vw; }
+}
+
+.purchaseMonthTableBlock { min-width: 0; }

@@ -1,0 +1,77 @@
+.loginMain {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 2.5vw;
+  background: radial-gradient(ellipse at 50% 15%, rgba(42, 111, 181, 0.2), transparent 48%), #0b1220;
+}
+
+.loginCard {
+  width: min(29.861111vw, 100%);
+  padding: 2.638889vw;
+  border: 0.069444vw solid #28394e;
+  border-radius: 1.111111vw;
+  background: #111b2b;
+  box-shadow: 0 1.944444vw 5.555556vw rgba(0, 0, 0, 0.32);
+}
+
+.loginBrandMark {
+  display: grid;
+  width: 3.055556vw;
+  height: 4.888889vh;
+  place-items: center;
+  border: 0.069444vw solid #45bad8;
+  border-radius: 0.902778vw 0.208333vw 0.902778vw 0.208333vw;
+  background: #142a41;
+  color: #70d4e3;
+  font-size: 1.527778vw;
+  font-weight: 850;
+}
+
+.loginEyebrow {
+  margin-top: 1.736111vw;
+  color: #49c1db;
+  font-size: 0.694444vw;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.loginCard h1 {
+  margin: 0.763889vw 0 0.555556vw;
+  color: #e7effa;
+  font-size: 1.875vw;
+  letter-spacing: -0.03em;
+}
+
+.loginCard p {
+  margin: 0 0 1.875vw;
+  color: #94a5ba;
+  font-size: 0.902778vw;
+  line-height: 1.6;
+}
+
+.loginCard form {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginCard label {
+  margin-bottom: 0.555556vw;
+  color: #8496ad;
+  font-size: 0.694444vw;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.loginCard input {
+  height: 4.777778vh;
+  padding: 0 0.833333vw;
+  border: 0.069444vw solid #30425a;
+  border-radius: 0.555556vw;
+  background: #0c1523;
+  color: #e5edf7;
+  font-size: 0.902778vw;
+}
+
+.loginCard input::placeholder { color: #61748b; }
+.loginCard .primaryButton { width: 100%; margin-top: 1.180556vw; }

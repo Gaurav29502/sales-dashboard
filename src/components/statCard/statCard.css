@@ -1,0 +1,44 @@
+.statCard {
+  position: relative;
+  display: flex;
+  min-width: 0;
+  min-height: 12.888889vh;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 1.041667vw 1.111111vw 0.902778vw;
+  overflow: hidden;
+  border: 0.069444vw solid #25364b;
+  border-radius: 0.763889vw;
+  background: linear-gradient(145deg, rgba(22, 35, 54, 0.98), rgba(15, 25, 40, 0.98));
+  color: #e6edf7;
+  text-align: left;
+}
+
+button.statCard { cursor: pointer; }
+
+.statCard::after {
+  position: absolute;
+  right: -1.527778vw;
+  bottom: -4.888889vh;
+  width: 6.944444vw;
+  height: 9.444444vh;
+  border-radius: 50%;
+  background: var(--statGlow, rgba(75, 156, 255, 0.07));
+  content: "";
+  filter: blur(0.902778vw);
+  pointer-events: none;
+}
+
+.statCardClickable { transition: transform 150ms ease, border-color 150ms ease, background 150ms ease; }
+.statCardClickable:hover { transform: translateY(-0.138889vw); border-color: #4775a4; background: #17283d; }
+.statCardTopline { display: flex; align-items: center; gap: 0.555556vw; }
+.statCardIcon { color: var(--statColor, #61b4ff); font-size: 1.041667vw; line-height: 1; }
+.statCardLabel { color: #93a5bc; font-size: 0.625vw; font-weight: 800; letter-spacing: 0.11em; }
+.statCardArrow { margin-left: auto; color: #6d8bad; font-size: 1.041667vw; }
+.statCardValue { margin-top: 0.902778vw; color: #eaf2fc; font-size: clamp(1.388889vw, 1.75vw, 1.875vw); font-weight: 750; letter-spacing: -0.035em; line-height: 1; }
+.statCardDetail { margin-top: 0.555556vw; color: #8194aa; font-size: 0.694444vw; }
+.statCardHint { position: absolute; right: 0.833333vw; bottom: 0.694444vw; color: #64809e; font-size: 0.555556vw; }
+.statCardgreen { --statColor: #53d6a4; --statGlow: rgba(68, 211, 162, 0.08); }
+.statCardcyan { --statColor: #46c9dd; --statGlow: rgba(65, 201, 223, 0.08); }
+.statCardamber { --statColor: #f2bc62; --statGlow: rgba(243, 185, 87, 0.08); }
+.statCardred { --statColor: #ff7882; --statGlow: rgba(255, 114, 127, 0.08); }

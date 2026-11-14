@@ -1,0 +1,235 @@
+.dashboardHeader {
+  position: sticky;
+  z-index: 20;
+  top: 0;
+  display: flex;
+  align-items: center;
+  min-height: 10.444444vh;
+  padding: 0 2.361111vw;
+  border-bottom: 0.069444vw solid #1d2b3e;
+  background: rgba(11, 18, 32, 0.97);
+  box-shadow: 0 0.555556vw 1.944444vw rgba(0, 0, 0, 0.12);
+}
+
+.headerBrand {
+  display: flex;
+  flex: 0 0 14.027778vw;
+  align-items: center;
+  gap: 0.833333vw;
+}
+
+.brandMark {
+  display: grid;
+  width: 2.569444vw;
+  height: 4.111111vh;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.208333vw;
+  transform: rotate(45deg) scale(0.78);
+}
+
+.brandMark span {
+  border: 0.069444vw solid #54c4e4;
+  border-radius: 0.347222vw 0.069444vw 0.347222vw 0.069444vw;
+  background: linear-gradient(145deg, rgba(75, 156, 255, 0.5), rgba(65, 201, 223, 0.08));
+}
+
+.brandMark span:nth-child(2),
+.brandMark span:nth-child(3) {
+  border-color: #4b9cff;
+}
+
+.brandName {
+  color: #e8f3ff;
+  font-size: 1.111111vw;
+  font-weight: 850;
+  letter-spacing: 0.17em;
+}
+
+.brandCaption {
+  margin-top: 0.277778vw;
+  color: #788ba4;
+  font-size: 0.555556vw;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.headerDivider {
+  width: 0.069444vw;
+  height: 4.777778vh;
+  margin: 0 1.597222vw 0 0.208333vw;
+  background: #29384a;
+}
+
+.headerTitleBlock {
+  min-width: 17.708333vw;
+}
+
+.headerTitle {
+  color: #d9e5f3;
+  font-size: 0.833333vw;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+}
+
+.headerSubtitle {
+  margin-top: 0.486111vw;
+  color: #8295ad;
+  font-size: 0.763889vw;
+}
+
+.headerSubtitle span {
+  margin: 0 0.347222vw;
+  color: #41536b;
+}
+
+.headerNavigation {
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  gap: 0.277778vw;
+  margin: 0 auto;
+  padding: 0 1.388889vw;
+}
+
+.headerNavItem {
+  position: relative;
+  display: flex;
+  height: 4.888889vh;
+  align-items: center;
+  gap: 0.555556vw;
+  padding: 0 0.902778vw;
+  border: 0.069444vw solid transparent;
+  border-radius: 0.555556vw;
+  background: transparent;
+  color: #8ea1b9;
+  font-size: 0.833333vw;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color 150ms ease, background 150ms ease, border-color 150ms ease;
+}
+
+.headerNavItem:hover {
+  border-color: #24374e;
+  background: #111e30;
+  color: #dcecff;
+}
+
+.headerNavItemActive {
+  border-color: #254d77;
+  background: #122741;
+  color: #75baff;
+}
+
+.headerNavItemActive::after {
+  position: absolute;
+  right: 0.902778vw;
+  bottom: -2.777778vh;
+  left: 0.902778vw;
+  height: 0.222222vh;
+  background: #4b9cff;
+  content: "";
+}
+
+.headerNavIcon {
+  width: 1.041667vw;
+  color: currentColor;
+  font-size: 1.041667vw;
+  text-align: center;
+}
+
+.headerCredentials {
+  display: flex;
+  flex-direction: column;
+  gap: 0.347222vw;
+  padding-left: 1.041667vw;
+  border-left: 0.069444vw solid #25364b;
+  color: #637892;
+  font-size: 0.555556vw;
+  letter-spacing: 0.045em;
+  white-space: nowrap;
+}
+
+.headerCredentials b {
+  margin-left: 0.208333vw;
+  color: #9badc4;
+  font-weight: 600;
+}
+
+.credentialBadge {
+  color: #8093aa;
+}
+
+.credentialBadge i {
+  display: inline-block;
+  width: 0.208333vw;
+  height: 0.333333vh;
+  margin: 0 0.347222vw 0.138889vw;
+  border-radius: 50%;
+  background: #48cf9d;
+}
+
+.headerLogoutButton {
+  display: grid;
+  width: 2.5vw;
+  height: 4vh;
+  flex: 0 0 2.5vw;
+  place-items: center;
+  margin-left: 1.180556vw;
+  border: 0.069444vw solid #2a3c52;
+  border-radius: 0.555556vw;
+  background: #111c2b;
+  color: #94a9c3;
+  cursor: pointer;
+}
+
+.headerLogoutButton:hover {
+  border-color: #477fb5;
+  color: #d8eaff;
+}
+
+.headerLogoutButton svg {
+  width: 1.180556vw;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.7;
+}
+
+@media (max-width: 80rem) {
+  .dashboardHeader { padding: 0 1.527778vw; }
+  .headerBrand { flex-basis: 11.458333vw; }
+  .headerDivider { margin-right: 1.041667vw; }
+  .headerTitleBlock { min-width: 15.277778vw; }
+  .headerNavigation { gap: 0; padding: 0 0.625vw; }
+  .headerNavItem { gap: 0.416667vw; padding: 0 0.625vw; font-size: 0.763889vw; }
+  .headerCredentials { font-size: 0.486111vw; }
+}
+
+.headerFilterButton {
+  display: flex;
+  height: 4.2vh;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 0.48vw;
+  margin-left: 1vw;
+  padding: 0 0.8vw;
+  border: 0.069444vw solid #2a3c52;
+  border-radius: 0.55vw;
+  background: #111c2b;
+  color: #a9bfd8;
+  font-size: 0.76vw;
+  font-weight: 700;
+  cursor: pointer;
+}
+.headerFilterButton:hover { border-color: #4b9cff; color: #e2f1ff; }
+.headerFilterButton svg { width: 0.95vw; fill: none; stroke: currentColor; stroke-width: 1.7; }
+@media (max-width: 80rem) {
+  .headerFilterButton { height: 4vh; margin-left: 0.7vw; padding: 0 0.8vw; font-size: 1vw; }
+  .headerFilterButton svg { width: 1.3vw; }
+}
+@media (max-width: 48rem) {
+  .headerFilterButton { height: 4vh; gap: 1vw; margin: 0 0 0 auto; padding: 0 2vw; font-size: 2.3vw; }
+  .headerFilterButton svg { width: 3vw; }
+}

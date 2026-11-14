@@ -1,0 +1,186 @@
+.ageingMain {
+  width: min(95.28vw, 95.28vw);
+  min-height: calc(100vh - 10.444444vh);
+  margin: 0 auto;
+  padding: 2.5vh 0 3.2vh;
+}
+
+.ageingPageIntro,
+.ageingControlRow,
+.ageingTableHeader,
+.ageingMetricTop,
+.ageingFilterHead,
+.ageingFilterActions,
+.ageingFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ageingPageIntro { margin-bottom: 2.4vh; }
+.ageingEyebrow { display: flex; align-items: center; gap: 0.55vw; color: var(--cyan); font-size: 0.68vw; font-weight: 800; letter-spacing: 0.16em; }
+.ageingLiveIndicator { width: 0.42vw; height: 0.42vw; border-radius: 50%; background: var(--green); box-shadow: 0 0 0.7vw rgba(68, 211, 162, 0.48); }
+.ageingPageIntro h1 { margin: 0.55vh 0 0; color: var(--text-main); font-size: 1.9vw; letter-spacing: -0.035em; }
+.ageingPageIntro p { margin: 0.55vh 0 0; color: var(--text-muted); font-size: 0.82vw; }
+.ageingFilterButton { display: flex; height: 4.7vh; align-items: center; gap: 0.65vw; padding: 0 1.15vw; border: 0.07vw solid #31445e; border-radius: 0.6vw; background: #132238; color: #c8d8e9; font-size: 0.83vw; font-weight: 700; cursor: pointer; }
+.ageingFilterButton:hover { border-color: #4b9cff; color: #fff; }
+.ageingFilterButton svg { width: 1.1vw; fill: none; stroke: currentColor; stroke-width: 1.7; }
+.ageingFilterCount { display: grid; width: 1.2vw; height: 1.2vw; place-items: center; border-radius: 50%; background: #4b9cff; color: #081321; font-size: 0.65vw; }
+.ageingControlRow { justify-content: flex-start; gap: 1vw; margin-bottom: 1.7vh; }
+.ageingSalesTabs { display: flex; gap: 0.55vw; }
+.ageingSalesTab { display: flex; height: 5.5vh; align-items: center; gap: 0.6vw; padding: 0 1.1vw; border: 0.07vw solid #273a51; border-radius: 0.65vw; background: #111b2b; color: #8fa3bb; font-size: 0.83vw; font-weight: 700; cursor: pointer; }
+.ageingSalesTab span { font-size: 1vw; }
+.ageingSalesTabActive { border-color: #347bc1; background: linear-gradient(135deg, #1a4773, #17334f); color: #e6f3ff; box-shadow: inset 0 0 0 0.07vw rgba(75, 156, 255, 0.16); }
+.ageingAsOfBadge { display: flex; flex-direction: column; gap: 0.25vh; margin-left: auto; padding: 0.75vh 1vw; border: 0.07vw solid #26384d; border-radius: 0.55vw; background: #101a29; }
+.ageingAsOfBadge span { color: var(--text-dim); font-size: 0.55vw; font-weight: 800; letter-spacing: 0.12em; }
+.ageingAsOfBadge b { color: #cfdae8; font-size: 0.78vw; font-weight: 650; }
+.ageingBackButton { padding: 0.7vh 0.85vw; border: 0.07vw solid #2d4058; border-radius: 0.5vw; background: #111c2d; color: #a9c3df; font-size: 0.75vw; font-weight: 700; cursor: pointer; }
+
+.ageingSummaryGrid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 0.85vw; margin-bottom: 2vh; }
+.ageingMetric { min-height: 10.7vh; padding: 1.35vh 1vw; border: 0.07vw solid #293a50; border-radius: 0.8vw; background: #121e2e; box-shadow: 0 0.75vw 1.6vw rgba(0, 0, 0, 0.1); }
+.ageingMetricTop { color: #8fa2b9; font-size: 0.72vw; font-weight: 650; text-transform: uppercase; letter-spacing: 0.045em; }
+.ageingMetricTop i { display: grid; width: 1.6vw; height: 1.6vw; place-items: center; border-radius: 0.45vw; font-size: 0.82vw; font-style: normal; }
+.ageingMetric b { display: block; margin-top: 1.3vh; font-size: 1.32vw; letter-spacing: -0.035em; }
+.ageingMetricblue { border-top: 0.18vh solid #4b9cff; }.ageingMetricblue b { color: #82bdff; }.ageingMetricblue i { background: rgba(75, 156, 255, 0.12); color: #68adff; }
+.ageingMetricgreen { border-top: 0.18vh solid #44d3a2; }.ageingMetricgreen b { color: #69dfb6; }.ageingMetricgreen i { background: rgba(68, 211, 162, 0.12); color: #44d3a2; }
+.ageingMetriccyan { border-top: 0.18vh solid #41c9df; }.ageingMetriccyan b { color: #6bd8e8; }.ageingMetriccyan i { background: rgba(65, 201, 223, 0.12); color: #41c9df; }
+.ageingMetricamber { border-top: 0.18vh solid #f3b957; }.ageingMetricamber b { color: #f5c66f; }.ageingMetricamber i { background: rgba(243, 185, 87, 0.12); color: #f3b957; }
+.ageingMetricorange { border-top: 0.18vh solid #f28d57; }.ageingMetricorange b { color: #f3a476; }.ageingMetricorange i { background: rgba(242, 141, 87, 0.12); color: #f28d57; }
+.ageingMetricred { border-top: 0.18vh solid #ff727f; }.ageingMetricred b { color: #ff8994; }.ageingMetricred i { background: rgba(255, 114, 127, 0.12); color: #ff727f; }
+
+.ageingTablePanel { overflow: hidden; border: 0.07vw solid #26384f; border-radius: 0.9vw; background: #111b2a; box-shadow: 0 1.2vw 2.5vw rgba(0, 0, 0, 0.14); }
+.ageingTableHeader { align-items: flex-start; gap: 1vw; padding: 1.8vh 1.3vw 1.5vh; }
+.ageingTableHeader h2 { margin: 0; color: #e0eaf5; font-size: 1.02vw; font-weight: 800; letter-spacing: 0.015em; text-transform: uppercase; }
+.ageingTableHeader p { margin: 0.55vh 0 0; color: var(--text-muted); font-size: 0.72vw; }
+.ageingLegend { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 0.45vw; max-width: 52vw; }
+.ageingLegend span { display: flex; align-items: center; gap: 0.35vw; padding: 0.55vh 0.58vw; border: 0.07vw solid #293b51; border-radius: 1vw; background: #142237; color: #afc0d3; font-size: 0.62vw; white-space: nowrap; }
+.ageingLegend i { width: 0.42vw; height: 0.42vw; border-radius: 50%; }
+.ageingLegendNotDue { background: #44d3a2; }.ageingLegend0to30 { background: #41c9df; }.ageingLegend31to60 { background: #f3b957; }.ageingLegend61to90 { background: #f28d57; }.ageingLegend90plus { background: #ff727f; }
+.ageingSearchBox { display: flex; width: 19vw; height: 4vh; align-items: center; gap: 0.5vw; margin: 0 1.3vw 1vh auto; padding: 0 0.7vw; border: 0.07vw solid #2c3e54; border-radius: 0.45vw; background: #0e1826; color: #7f94ad; }
+.ageingSearchBox svg { width: 0.9vw; fill: none; stroke: currentColor; stroke-width: 1.8; }
+.ageingSearchBox input { width: 100%; border: 0; outline: 0; background: transparent; color: #dce8f5; font-size: 0.7vw; }
+.ageingTableScroll { overflow: auto; width: 100%; }
+.ageingTable { width: 100%; border-collapse: collapse; color: #c0ccda; font-size: 0.71vw; text-align: left; white-space: nowrap; }
+.ageingTable:not(.invoiceAgeingTable) { table-layout: fixed; }
+.ageingTable:not(.invoiceAgeingTable) th:nth-child(1) { width: 21%; }
+.ageingTable:not(.invoiceAgeingTable) th:nth-child(2) { width: 9%; }
+.ageingTable:not(.invoiceAgeingTable) th:nth-child(3), .ageingTable:not(.invoiceAgeingTable) th:nth-child(4), .ageingTable:not(.invoiceAgeingTable) th:nth-child(5), .ageingTable:not(.invoiceAgeingTable) th:nth-child(6), .ageingTable:not(.invoiceAgeingTable) th:nth-child(7) { width: 7.2%; }
+.ageingTable:not(.invoiceAgeingTable) th:nth-child(8) { width: 8%; }
+.ageingTable:not(.invoiceAgeingTable) th:nth-child(9) { width: 8%; }
+.ageingTable:not(.invoiceAgeingTable) th:nth-child(10) { width: 9%; }
+.ageingTable:not(.invoiceAgeingTable) td:first-child { overflow-wrap: anywhere; white-space: normal; }
+.ageingTable:not(.invoiceAgeingTable) th, .ageingTable:not(.invoiceAgeingTable) td { padding-right: 0.45vw; padding-left: 0.45vw; }
+.ageingTable:not(.invoiceAgeingTable) th:first-child, .ageingTable:not(.invoiceAgeingTable) td:first-child { padding-left: 1.1vw; }
+.ageingTable thead { background: #17263a; color: #9eb2ca; }
+.ageingTable th { padding: 1.25vh 0.82vw; font-size: 0.62vw; font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase; }
+.ageingTable td { padding: 1.35vh 0.82vw; border-top: 0.07vw solid #202f43; }
+.ageingTable td:first-child, .ageingTable th:first-child { padding-left: 1.3vw; }
+.ageingTable tbody tr { transition: background 140ms ease; }
+.ageingClientRow { cursor: pointer; }
+.ageingClientRow:hover { background: #15263a; }
+.ageingTable td b { color: #d7e4f1; font-weight: 700; }
+.ageingAmountCell { color: #dce8f5; font-variant-numeric: tabular-nums; font-weight: 750; }
+.ageingOldBalance { color: #ff929b; }
+.ageingRowAction { padding: 0.55vh 0.65vw; border: 0.07vw solid #2b4a6d; border-radius: 0.38vw; background: #142943; color: #8ec6ff; font-size: 0.65vw; font-weight: 750; cursor: pointer; }
+.ageingRowAction:hover { border-color: #4b9cff; background: #1a3655; }
+.ageingTable tfoot { background: #17263a; color: #e4edf7; }
+.ageingTable tfoot th { padding-top: 1.4vh; padding-bottom: 1.4vh; font-size: 0.7vw; text-transform: none; letter-spacing: 0; }
+.ageingTable tfoot th:not(:first-child) { font-variant-numeric: tabular-nums; }
+.wadoBadge { display: inline-flex; padding: 0.4vh 0.48vw; border-radius: 0.35vw; font-size: 0.66vw; font-weight: 800; font-variant-numeric: tabular-nums; }
+.wadoBadgeGreen { background: rgba(68, 211, 162, 0.13); color: #65dcb5; }.wadoBadgeAmber { background: rgba(243, 185, 87, 0.14); color: #f3c66f; }.wadoBadgeRed { background: rgba(255, 114, 127, 0.14); color: #ff8d98; }
+.ageingEmptyCell { padding: 4vh 1vw !important; color: var(--text-muted); text-align: center; }
+.ageingBucketBadge { display: inline-block; padding: 0.45vh 0.55vw; border-radius: 0.4vw; font-size: 0.66vw; font-weight: 750; }
+.ageingBucketBadgenotDue { background: rgba(68, 211, 162, 0.14); color: #68ddb7; }.ageingBucketBadgedays0to30 { background: rgba(65, 201, 223, 0.14); color: #69d5e4; }.ageingBucketBadgedays31to60 { background: rgba(243, 185, 87, 0.16); color: #f2c76f; }.ageingBucketBadgedays61to90 { background: rgba(242, 141, 87, 0.15); color: #f2a174; }.ageingBucketBadgedays90plus { background: rgba(255, 114, 127, 0.16); color: #ff8d98; }
+.ageingTableFootnote { padding: 1.15vh 1.3vw; border-top: 0.07vw solid #25364a; color: var(--text-muted); font-size: 0.69vw; }
+.ageingTableFootnote span { margin-right: 0.5vw; color: #9ecbfa; font-weight: 850; letter-spacing: 0.08em; }
+.ageingSourceNote { margin-top: 1.5vh; padding: 1.3vh 1vw; border: 0.07vw solid #27384d; border-radius: 0.6vw; background: rgba(17, 27, 43, 0.72); color: #8296af; font-size: 0.68vw; line-height: 1.55; }
+.ageingSourceNote b { margin-right: 0.4vw; color: #b5c8dc; }
+.ageingFooter { justify-content: flex-end; gap: 1vw; margin-top: 2vh; color: #62758d; font-size: 0.62vw; letter-spacing: 0.08em; }
+.ageingFooter button { border: 0; background: transparent; color: #8bbef0; font-size: 0.68vw; cursor: pointer; }
+
+.ageingFilterOverlay { position: fixed; z-index: 50; inset: 0; display: flex; justify-content: flex-end; background: rgba(1, 7, 15, 0.68); backdrop-filter: blur(0.2vw); }
+.ageingFilterDrawer { display: flex; width: min(34vw, 100%); height: 100%; flex-direction: column; padding: 3vh 2vw; border-left: 0.07vw solid #30445d; background: #101a29; box-shadow: -1vw 0 3vw rgba(0, 0, 0, 0.3); }
+.ageingFilterHead { align-items: flex-start; padding-bottom: 2vh; border-bottom: 0.07vw solid #26374c; }
+.ageingFilterHead span { color: var(--cyan); font-size: 0.62vw; font-weight: 850; letter-spacing: 0.14em; }
+.ageingFilterHead h2 { margin: 0.65vh 0 0; color: #ecf4fc; font-size: 1.4vw; }
+.ageingFilterHead p { margin: 0.55vh 0 0; color: var(--text-muted); font-size: 0.74vw; }
+.ageingFilterClose { width: 2.1vw; height: 2.1vw; border: 0.07vw solid #304158; border-radius: 0.45vw; background: #162438; color: #a6b8cc; font-size: 1.3vw; cursor: pointer; }
+.ageingFilterFields { display: grid; gap: 1.75vh; margin-top: 2.4vh; }
+.ageingFilterField { display: grid; gap: 0.65vh; color: #9db0c6; font-size: 0.72vw; font-weight: 700; }
+.ageingFilterField input, .ageingFilterField select { width: 100%; height: 4.8vh; padding: 0 0.75vw; border: 0.07vw solid #31445d; border-radius: 0.48vw; background: #0b1421; color: #dce9f7; font-size: 0.76vw; }
+.ageingFilterNote { margin-top: 1.8vh; padding: 1vh 0.8vw; border-left: 0.18vw solid #f3b957; background: rgba(243, 185, 87, 0.07); color: #a9b9cc; font-size: 0.68vw; line-height: 1.55; }
+.ageingFilterError { color: #ff8994; font-size: 0.74vw; }
+.ageingFilterActions { gap: 0.6vw; margin-top: auto; padding-top: 1.5vh; border-top: 0.07vw solid #26374c; }
+.ageingFilterActions button { height: 4.4vh; padding: 0 0.9vw; border-radius: 0.45vw; font-size: 0.71vw; font-weight: 750; cursor: pointer; }
+.ageingClearButton { margin-right: auto; border: 0; background: transparent; color: #8fa3bb; }
+.ageingCancelButton { border: 0.07vw solid #31445d; background: #152237; color: #c0cede; }
+.ageingApplyButton { border: 0.07vw solid #3585da; background: #2577d5; color: white; }
+
+@media (max-width: 80rem) {
+  .ageingMain { width: 94vw; padding-top: 2vh; }
+  .ageingSummaryGrid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .ageingMetric { min-height: 10vh; }
+  .ageingMetric b { font-size: 2vw; }
+  .ageingEyebrow, .ageingAsOfBadge span, .ageingLegend span, .ageingTable th, .ageingFooter { font-size: 0.8vw; }
+  .ageingPageIntro h1 { font-size: 2.7vw; }
+  .ageingPageIntro p, .ageingTableHeader p, .ageingSourceNote, .ageingTableFootnote { font-size: 1vw; }
+  .ageingTableHeader h2 { font-size: 1.35vw; }
+  .ageingLegend { max-width: 58vw; }
+  .ageingTable { min-width: 118vw; font-size: 0.95vw; }
+  .ageingSearchBox input, .ageingRowAction, .ageingBucketBadge, .wadoBadge { font-size: 0.9vw; }
+  .ageingFilterDrawer { width: min(48vw, 100%); }
+  .ageingFilterHead span, .ageingFilterField, .ageingFilterNote { font-size: 0.9vw; }
+  .ageingFilterHead h2 { font-size: 1.8vw; }
+  .ageingFilterHead p, .ageingFilterField input, .ageingFilterField select, .ageingFilterActions button { font-size: 1vw; }
+}
+
+@media (max-width: 48rem) {
+  .ageingMain { width: 92vw; }
+  .ageingPageIntro { align-items: flex-start; }
+  .ageingPageIntro h1 { font-size: 5.5vw; }
+  .ageingPageIntro p { max-width: 54vw; font-size: 2.5vw; }
+  .ageingEyebrow { font-size: 2vw; }
+  .ageingFilterButton { height: 4.6vh; padding: 0 2vw; font-size: 2.5vw; }
+  .ageingFilterButton svg { width: 3vw; }
+  .ageingFilterCount { width: 3vw; height: 3vw; font-size: 2vw; }
+  .ageingControlRow { flex-wrap: wrap; }
+  .ageingSalesTabs { width: 100%; }
+  .ageingSalesTab { height: 5.5vh; flex: 1; justify-content: center; font-size: 2.5vw; }
+  .ageingSalesTab span { font-size: 3vw; }
+  .ageingAsOfBadge { margin-left: 0; padding: 0.8vh 2vw; }
+  .ageingAsOfBadge span { font-size: 1.6vw; }
+  .ageingAsOfBadge b { font-size: 2vw; }
+  .ageingSummaryGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.2vw; }
+  .ageingMetric { min-height: 9.5vh; padding: 1.2vh 2vw; }
+  .ageingMetricTop { font-size: 2vw; }
+  .ageingMetricTop i { width: 4vw; height: 4vw; font-size: 2vw; }
+  .ageingMetric b { margin-top: 1vh; font-size: 3.2vw; }
+  .ageingTableHeader { align-items: flex-start; flex-direction: column; padding: 1.7vh 2vw; }
+  .ageingTableHeader h2 { font-size: 2.7vw; }
+  .ageingTableHeader p, .ageingTableFootnote { font-size: 2vw; }
+  .ageingLegend { justify-content: flex-start; max-width: unset; gap: 1vw; }
+  .ageingLegend span { gap: 1vw; padding: 0.45vh 1.3vw; font-size: 1.8vw; }
+  .ageingLegend i { width: 1.4vw; height: 1.4vw; }
+  .ageingSearchBox { width: 48vw; height: 3.8vh; margin-right: 2vw; }
+  .ageingSearchBox svg { width: 2.5vw; }
+  .ageingSearchBox input { font-size: 2vw; }
+  .ageingTable { min-width: 190vw; font-size: 2vw; }
+  .ageingTable th { font-size: 1.8vw; }
+  .ageingTable th, .ageingTable td { padding: 1.2vh 1.7vw; }
+  .ageingTable td:first-child, .ageingTable th:first-child { padding-left: 2vw; }
+  .ageingRowAction, .wadoBadge, .ageingBucketBadge { font-size: 1.8vw; }
+  .ageingSourceNote { padding: 1vh 2vw; font-size: 1.9vw; }
+  .ageingFooter { font-size: 1.7vw; }
+  .ageingFooter button { font-size: 1.9vw; }
+  .ageingFilterDrawer { width: 100%; padding: 2.5vh 5vw; }
+  .ageingFilterHead span { font-size: 2vw; }
+  .ageingFilterHead h2 { font-size: 5vw; }
+  .ageingFilterHead p { font-size: 2.5vw; }
+  .ageingFilterClose { width: 7vw; height: 7vw; font-size: 5vw; }
+  .ageingFilterField { font-size: 2.3vw; }
+  .ageingFilterField input, .ageingFilterField select { height: 5vh; padding: 0 2vw; font-size: 2.5vw; }
+  .ageingFilterNote { padding: 1vh 2vw; font-size: 2.1vw; }
+  .ageingFilterError { font-size: 2.3vw; }
+  .ageingFilterActions { gap: 1.5vw; }
+  .ageingFilterActions button { height: 4.7vh; padding: 0 2vw; font-size: 2vw; }
+}
