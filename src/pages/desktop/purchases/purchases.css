@@ -44,7 +44,7 @@
 .purchaseMonthTable td:first-child, .purchaseMonthTable th:first-child, .supplierPayablesTable td:first-child, .supplierPayablesTable th:first-child { padding-left: 0.8vw; }
 .purchaseMonthTable tbody tr:last-child td, .supplierPayablesTable tbody tr:last-child td { border-bottom: 0; }
 .purchaseMonthTable tbody td:not(:first-child), .purchaseMonthTable tfoot th:not(:first-child), .supplierPayablesTable td:nth-child(n+3) { font-variant-numeric: tabular-nums; }
-.purchaseMonthTable td b, .supplierPayablesTable td b { color: #d7e4f1; }
+.purchaseMonthTable td b, .supplierPayablesTable td b { color: #172b46; }
 .purchasePaidCell { color: #68dcb4; }.purchaseOwingCell { color: #f1c46f; }.purchaseOverdueCell { color: #ff8994; }
 .purchaseMonthTable tfoot { background: #17263a; color: #dce8f5; }.purchaseMonthTable tfoot th { text-transform: none; letter-spacing: 0; }
 .purchaseEmptyCell { padding: 2.6vh 0.7vw !important; color: var(--text-muted); text-align: center; }

@@ -78,7 +78,7 @@
 .ageingTable tbody tr { transition: background 140ms ease; }
 .ageingClientRow { cursor: pointer; }
 .ageingClientRow:hover { background: #15263a; }
-.ageingTable td b { color: #d7e4f1; font-weight: 700; }
+.ageingTable td b { color: #172b46; font-weight: 700; }
 .ageingAmountCell { color: #dce8f5; font-variant-numeric: tabular-nums; font-weight: 750; }
 .ageingOldBalance { color: #ff929b; }
 .ageingRowAction { padding: 0.55vh 0.65vw; border: 0.07vw solid #2b4a6d; border-radius: 0.38vw; background: #142943; color: #8ec6ff; font-size: 0.65vw; font-weight: 750; cursor: pointer; }

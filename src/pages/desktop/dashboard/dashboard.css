@@ -224,26 +224,26 @@
 .breakdownBreadcrumb { display: flex; align-items: center; gap: 0.555556vw; margin-bottom: 0.625vw; color: #637b96; font-size: 0.625vw; }
 .breakdownBreadcrumb button { padding: 0; border: 0; background: none; color: #84b8e6; font-size: 0.625vw; cursor: pointer; }
 .breakdownBreadcrumb button:hover { color: #c4e4ff; text-decoration: underline; }
-.breakdownBreadcrumb b { color: #afbed0; font-weight: 650; }
+.breakdownBreadcrumb b { color: #3d536b; font-weight: 650; }
 .breakdownIntroRow h1 { margin-top: 0; }
 .breakdownKpiGrid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 0.625vw; margin-bottom: 1.041667vw; }
 .breakdownKpiCard { display: flex; min-height: 5.416667vw; min-width: 0; flex-direction: column; justify-content: center; gap: 0.625vw; padding: 0.833333vw 0.902778vw; border: 0.069444vw solid #25364a; border-radius: 0.625vw; background: linear-gradient(150deg, #142136, #101a29); }
 .breakdownKpiCard span { overflow: hidden; color: #8195ad; font-size: 0.555556vw; font-weight: 800; letter-spacing: 0.09em; text-overflow: ellipsis; white-space: nowrap; }
-.breakdownKpiCard b { overflow: hidden; color: #e5eef9; font-size: clamp(0.902778vw, 1.2vw, 1.25vw); font-weight: 720; text-overflow: ellipsis; white-space: nowrap; }
+.breakdownKpiCard b { overflow: hidden; color: #172b46; font-size: clamp(0.902778vw, 1.2vw, 1.25vw); font-weight: 720; text-overflow: ellipsis; white-space: nowrap; }
 .breakdownTablePanel { padding: 1.180556vw 1.180556vw 0.833333vw; }
 .tableCountBadge { padding: 0.347222vw 0.555556vw; border: 0.069444vw solid #293d55; border-radius: 0.347222vw; color: #8198b2; font-size: 0.555556vw; }
 .tableScroll { width: 100%; margin-top: 0.902778vw; overflow-x: auto; }
 .dashboardTable { width: 100%; border-collapse: separate; border-spacing: 0; color: #a8b7c9; font-size: 0.625vw; text-align: left; white-space: nowrap; }
-.dashboardTable th { padding: 0.694444vw 0.625vw; border-top: 0.069444vw solid #293a4f; border-bottom: 0.069444vw solid #33465d; background: #17263a; color: #8da3bc; font-size: 0.486111vw; font-weight: 800; letter-spacing: 0.07em; }
+.dashboardTable th { padding: 0.694444vw 0.625vw; border-top: 0.069444vw solid #293a4f; border-bottom: 0.069444vw solid #33465d; color: #8da3bc; font-size: 0.686111vw; font-weight: 800; letter-spacing: 0.07em; }
 .dashboardTable th:first-child { border-top-left-radius: 0.416667vw; }
 .dashboardTable th:last-child { border-top-right-radius: 0.416667vw; }
-.dashboardTable td { padding: 0.833333vw 0.625vw; border-bottom: 0.069444vw solid #202f42; color: #afbed0; font-size: 0.625vw; }
+.dashboardTable td { padding: 0.833333vw 0.625vw; border-bottom: 0.069444vw solid #202f42; color: #3d536b; font-size: 0.625vw; }
 .dashboardTable tbody tr:hover td { background: rgba(45, 83, 122, 0.12); }
 .dashboardTable tbody tr[onclick] { cursor: pointer; }
 .dashboardTable tbody tr[onclick]:hover td { background: rgba(57, 119, 176, 0.12); }
-.dashboardTable .tablePrimaryCell { color: #dce8f6; font-weight: 650; }
+.dashboardTable .tablePrimaryCell { color: #172b46; font-weight: 650; }
 .geographyFlag { display: inline-grid; width: 1.111111vw; height: 1.111111vw; place-items: center; margin-right: 0.486111vw; border: 0.069444vw solid #304963; border-radius: 0.277778vw; background: #15273d; color: #73b5ed; font-size: 0.555556vw; }
-.tableActionButton { padding: 0.347222vw 0.555556vw; border: 0.069444vw solid #2e4c6c; border-radius: 0.347222vw; background: #14263b; color: #90c8fa; font-size: 0.555556vw; cursor: pointer; }
+.tableActionButton { padding: 0.347222vw 0.555556vw; border: 0.069444vw solid #2e4c6c; border-radius: 0.347222vw; color: #172b46; font-size: 0.555556vw; cursor: pointer; }
 .tableActionButton:hover { border-color: #4786be; background: #1b3652; }
 .tableActionButton span { margin-left: 0.208333vw; }
 .positiveText { color: #56d4a7; }
